@@ -9,6 +9,10 @@
 #include <string.h>
 #include <windows.h>
 
+
+
+int main(){
+	
 int opcao, quantidadeSessoes[100], i, quantidadePessoas[100], j, idadeEspectador[100];
 char nomeFilme[50][100], entradaEspectador[50][100], avaliacaoFilme[50][100];
 char sexo[10][1];
@@ -17,8 +21,8 @@ int meia=0, inteira=0, valorSessao;
 int homemMaior=0, mulherMaior=0;
 int crianca=0, adolescente=0, adulto=0, idoso=0;
 int bom=0, ruim=0;
-
-int main(){
+	
+	
 	
 	setlocale(LC_ALL, "PORTUGUESE"); //Setando os caracteres para o padrão português
 	menu:
@@ -190,13 +194,6 @@ int main(){
 			 printf("\nNúmero de idosos que assistiram ao filme: %d", idoso);			//Número de idosos que assistiram ao filme
 			 printf("\n\nNúmero de espectadores que acharam o filme bom: %d", bom); 	//Número de espectadores que acharam o filme bom
 			 printf("\nNúmero de espectadores que acharam o filme ruim: %d", ruim); 	//Número de espectadores que acharam o filme ruim
-			 if(meia>inteira){															//Condição qual tipo de entrada foi mais comprada
-			 	printf("\n\nHouve maior pagamento de meia entrada.");
-			 }else if(inteira>meia){
-			 	printf("\n\nHouve maior pagamento de entrada inteira");
-			 }else if(meia==inteira){
-			 	printf("\n\nO valor de cada tipo de entrada foi equivalente");
-			 }
 			 
 			 printf("\n\nO programa irá finalizar em alguns segundos...");
 			 Sleep(30000);	//Função de espera
